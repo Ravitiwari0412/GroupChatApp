@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/cardview_shadow_start_color"
+    android:layout_height="match_parent"
+    tools:context="com.codingblocks.mychatapp.Chat_Room">
+
+    <Button
+        android:id="@+id/btn_send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:text="Send" />
+
+    <EditText
+        android:id="@+id/etnewMsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/btn_send"
+        android:layout_marginEnd="39dp"
+        android:layout_marginRight="39dp"
+
+        android:layout_toLeftOf="@+id/btn_send"
+        android:layout_toStartOf="@+id/btn_send"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Type your msg here" />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/btn_send"
+        android:layout_alignRight="@+id/btn_send"
+        android:layout_alignEnd="@+id/btn_send">
+    <TextView
+        android:id="@+id/textView"
+        android:textSize="30sp"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    </ScrollView>
+
+
+</RelativeLayout>
